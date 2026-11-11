@@ -7,6 +7,7 @@
   <body>
     <a-scene>
       <a-assets>
+		<a-asset-item id="3d" src="Stunning Snaget.glb"></a-asset-item>
         <img id="crateTexture" src="grass_texture_local.jpg" crossorigin="anonymous"/>
         <img id="skyTexture" src="360-degree_Panorama_of_the_Southern_Sky.jpg" crossorigin="anonymous"/>
       </a-assets>
@@ -31,7 +32,7 @@
 	  <a-plane rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
 	  -->
       <a-plane rotation="-90 0 0" width="10" height="10" src="#crateTexture"></a-plane>
-      
+      <a-entity gtlf-model="#3d" position="0 2 -10" scale="10 10 10"></a-entity>
       <!-- Shapes -->
       <a-sphere position="-1 1 0" radius="0.5" color="#EF2D5E"></a-sphere>
       <a-box position="1 0.5 0" depth="1" height="1" width="1" color="#4CC3D9"></a-box>
